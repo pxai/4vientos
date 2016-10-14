@@ -1,0 +1,49 @@
+#container {
+}
+
+#topbar {
+	background-color: black;
+	text-align: right;
+	height: 25px;
+	color: white;
+	}
+#topbar a{
+	color: inherit;
+	}
+	
+#logo {
+	clear: both;
+	width: 400px;
+	margin: 7em auto 0 auto;
+
+	}
+#logo a {
+	text-decoration: none;
+}
+#logo img {
+	display: block;
+	margin: 0 auto 0 auto;
+		border: 0;
+}
+
+#validationforms {
+	margin: 4em auto 0 auto;
+	width: 40em;
+	min-width: 45em;
+}
+.validation {
+	float: left;
+	width: 20em;
+}
+#openidlogin {
+	clear: both;
+	width: 40em;
+	margin: 10px auto 0 auto;
+	background-image: url(login.png);
+	background-repeat:no-repeat;
+	}
+#logindiv form {
+	margin-left: 100px;
+	padding: 50px;
+	}
+	

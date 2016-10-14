@@ -1,0 +1,506 @@
+/**
+* $Id$
+* style.css
+* General style
+*/
+
+html, body {
+	margin: 0;
+	padding: 0;
+	font-size: 10pt;
+	/*font-family: sans, arial;*/
+}
+#container {
+
+}
+
+#topbar {
+background-color: #6284ae;
+position: fixed;
+top: 0;
+color: white;
+width: 100%;
+}
+
+#topbar a {
+	color: white;
+}
+
+#logo {
+	margin: 1px;
+	width: 300px;
+	float: left;
+}
+
+#content {
+	clear: both;
+	margin-top: 30px;
+}
+
+#breadcrumb {
+	padding: 10px 5px;
+}
+
+#dirheader {
+	/*position: fixed;*/
+	margin-left: 200px;
+	/*width: 100%;*/
+	padding: 2px 3px 0pt 1px;
+}
+
+
+
+#files {
+	margin-left: 200px;
+	min-height: 300px;
+	height: 40em;
+	padding: 2px 3px 0pt 1px;
+	overflow: scroll;
+	clear: both;
+	z-index: 3;
+}
+#filemenu {
+	min-width: 400px;
+	width: 500px;
+	float: left;
+}
+#filemenu li {
+	font-weight: none;
+	font-size: 10pt;
+}
+
+#file_name a{
+	text-decoration: none;
+	font-size: 16pt;
+	font-weight: bolder;
+}
+
+#divsearch {
+	width: 600px;
+	float: left;
+}
+
+
+
+#dialogo {
+	visibility: hidden;
+ 	display: none;
+	background-color: white;
+	border: 1px solid #00ccff;
+}
+
+#footer {
+	clear: both;
+	width: 90em;
+	min-width: 80em;
+	margin: 5em auto 0 auto;
+	bottom: 0;
+	color: gray;
+	border-top: dotted 1px lightgray;
+	padding-top: 1em;
+}
+#footer ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#footer li {
+	display: inline;
+	margin-right: 1.2em;
+}
+
+#footer a {
+	text-decoration: none;
+}
+#footerlinks {
+float: left;
+width: 50em;
+min-width: 30em;
+}
+#copyleft {
+	float: right;
+	width: 40em;
+	min-width: 40em;
+	text-align: right;
+}
+
+.error {
+	font-size: 0.1em;
+	color: red;
+}
+
+#sidebar {
+	float: left;
+	width: 200px;
+	padding-left: 1em;
+	margin-right: 1em;
+}
+#sidebar div {
+	margin-bottom: 2em;
+
+}
+#sidebar div.title {
+	margin-bottom: 0.2em;
+	background-color:#6284ae;
+	color: white;
+	padding: 0.5em 1em;
+	font-size: 1.5em;
+}
+
+#sidebar div div {
+	padding-left: 1em;
+	background-color: white;
+}
+
+
+.file {
+	padding-top: 10px;
+	border-bottom: 1px dotted #d1d1d1;
+	/*width: 600px;*/
+} 
+.fileredux {
+	font-size: 9pt;
+	margin-bottom: 0.8em;
+}
+
+.fileredux a {
+	font-size: 9pt;
+}
+
+.status_0 {
+	background-color: #fff;
+}
+.status_1 {
+	background-color: rgba(255,0,0,0.4);
+}
+.status_2 {
+	background-color: rgba(255, 102, 0,0.4);
+}
+
+.status_3 {
+	background-color: rgba(255, 0, 255,0.4);
+}
+
+.status_4 {
+	background-color: rgba(0, 255, 0,0.4);
+}
+
+.status_5 {
+	background-color: rgba(255, 102, 0,0.4);
+}
+
+.file:hover {
+background-color: lightGreen;
+}
+.file:hover .fileutilities {
+visibility: visible;
+}
+.filedata, #selectall {
+	font-size: 8pt;
+	color: gray;
+	float: right;
+	height: 50px;
+	text-align: right;
+}
+.filesize {
+	min-height:1.6em;
+}
+
+.file_check {
+	float:right;
+	width:30px;
+}
+
+.filename a,.dirname a {
+text-decoration: none;
+font-size: 12pt;
+}
+
+div.filedetails {
+	clear: both:
+	width: 100%;
+	border-bottom: 1px solid gray;
+}
+
+div.filedetails div {
+	margin: 5px 0;
+}
+
+div.filedetails span {
+	font-weight: bold;
+}
+
+#fileheader {
+	font-size: 16pt;
+	font-weight: bolder;
+	
+}
+
+#filedataheader {
+	clear: both;
+	height: 30px;
+	background-color: gray;	
+}
+#filedataheader div {
+	
+}
+
+#dataheadername {
+	float: left;
+	min-width: 200px;
+}
+
+#dataheaderprop {
+	float: right;
+	width: 300px;
+	min-width: 300px;
+}
+
+#total_files {
+	width: 150px;
+	float: left;
+	font-size: 10pt;
+	display: inline;
+	}
+#newdirplaceholder {
+clear: both;
+	}
+.fileimage {
+	float: left;
+	padding-right: 10px;
+}
+.filedescription {
+	color: gray;
+	font-size: 9pt;
+	/*font-style: italic;*/
+}
+
+.filetags span,a {
+	font-size: 9pt;
+	color: #6284ae;
+}
+
+.filetags a {
+	font-size: 9pt;
+	color: gray;
+	padding: 2px 1px 2px 3px;
+	border: 1px solid lightgray;
+	text-decoration: none;
+	/*background-color: gray; */
+}
+.fileutilities {
+clear: both;
+visibility: hidden;
+}
+
+.fileutilities ul {
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+
+.fileutilities li {
+display: inline;
+margin: 5px;
+}
+
+.dirutilities form,fieldset {
+	display: inline;
+}
+
+.dirutilities fieldset {
+	border: 0;
+	}
+
+.dirutilities ul {
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+
+.dirutilities li {
+border: 1px solid lightgray;
+display: inline-block;
+margin: 5px;
+position: relative;
+    width: 105px; padding: 7px 0;
+}
+
+.menuoculto {
+	visibility: hidden;
+}
+
+.ddmenu {
+
+}
+
+.ddmenu ul {
+	list-style: none;
+	visibility: hidden;
+	display: none;
+	margin: 0;
+	padding: 0;
+	float: left;
+	position: relative;
+	z-index: 5;
+}
+
+.ddmenu ul li {
+	display: block;
+	width: 200px;
+	border: 1px solid lightgray;
+	padding: 3px;
+}
+
+.ddmenu:hover ul {
+	visibility: visible;
+	display: block;
+	position:absolute;
+	z-index: 3;
+	margin-left: 10px;
+	/*left: 1%;*/
+}
+
+.ddmenu:hover ul li {
+	background-color: yellow;
+	width: 190px;
+	display: block;
+	position: relative;
+}
+
+
+.fileedit {
+visibility: hidden;
+display: none;
+clear: both;
+}
+
+#createdir {
+visibility: hidden;
+display: none;
+}
+
+.divhead {
+	font-size: 16pt;
+}
+
+#editnewfile {
+	/*visibility: hidden;*/
+	display: none;
+}
+/**
+* dirlist
+*/
+#dirlist {
+	/*visibility: hidden;*/
+	display: none;
+}
+
+/* move to dinastyle
+#dirlist li {
+	list-style-image: url(./icons/filesystems/gnome-fs-directory.sm.png);
+}
+*/
+#dirlist a {
+	text-decoration: none;
+}
+
+/**
+* #tagselect dialog
+*/
+#tagselect ul {
+	list-style: none;
+}
+
+#tagselect li {
+	border: 1px solid black;
+	background-color: white;
+	margin: 5px;
+	display: inline-block;
+	padding: 3px;
+}
+
+
+/*****
+* fileuploader
+*/
+
+#fileupload {
+	float: left;
+	width: 100px;
+}
+.qq-uploader { position:relative; width: 100%;}
+
+.qq-upload-button {
+    display:block; /* or inline-block */
+    /*width: 105px; padding: 7px 0; text-align:center;*/    
+    border-bottom:1px solid #ddd;
+}
+.qq-upload-button-hover {background:#cc0000;}
+.qq-upload-button-focus {outline:1px dotted black;}
+
+.qq-upload-drop-area {
+    position:absolute; top:0; left:0; width:100%; height:100%; min-height: 70px; z-index:2;
+    background:#FF9797; text-align:center; 
+}
+.qq-upload-drop-area span {
+    display:block; position:absolute; top: 50%; width:100%; margin-top:-8px; font-size:16px;
+}
+.qq-upload-drop-area-active {background:#FF7171;}
+
+.qq-upload-list {margin:15px 35px; padding:0; list-style:disc;}
+.qq-upload-list li { margin:0; padding:0; line-height:15px; font-size:12px;}
+.qq-upload-file, .qq-upload-spinner, .qq-upload-size, .qq-upload-cancel, .qq-upload-failed-text {
+    margin-right: 7px;
+}
+
+.qq-upload-file {}
+.qq-upload-spinner {display:inline-block; background: url("loading.gif"); width:15px; height:15px; vertical-align:text-bottom;}
+.qq-upload-size,.qq-upload-cancel {font-size:11px;}
+
+.qq-upload-failed-text {display:none;}
+.qq-upload-fail .qq-upload-failed-text {display:inline;}
+
+/**
+* 5 stars voting panel
+*/
+.votingpanel
+{
+
+}
+
+
+    
+.votingpanel  a {
+                width:25px;
+                padding-right: 20px;
+                padding-bottom: 5px;
+                margin-right: 2px;
+                height:25px;
+                text-indent:-9999px;
+/*                background-image: url(/images/stars.png);*/ 
+                background-position:0 -40px;
+                background-repeat: no-repeat;
+                border: none;
+    }
+  
+.votingpanel  a.mid {
+
+                background-position:0 -20px;
+
+    }  
+    
+.votingpanel  a.full {
+
+                background-position:0 0;
+    }  
+
+
+
+
+.votingpanel    a:hover {
+					color: red;
+               background-position:0 -60px;/* con esto cambiamos la porcion de imagen que se muestra */
+
+    }

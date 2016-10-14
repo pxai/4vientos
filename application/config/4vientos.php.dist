@@ -1,0 +1,110 @@
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+
+/*
+|--------------------------------------------------------------------------
+| data directory 
+|--------------------------------------------------------------------------
+| relative path where files are stored
+|
+*/
+$config['data_dir']	= './data/';
+		
+/*
+|--------------------------------------------------------------------------
+| site domains
+|--------------------------------------------------------------------------
+| Domain site, used for mailing
+|
+*/
+$config['site_domain']	= '4vientos.org';
+
+/*
+|--------------------------------------------------------------------------
+| validation
+|--------------------------------------------------------------------------
+| types of validation available:
+| simple: db account
+| ldap: validation against ldap server or Windows Server active directories.
+|       requires php-ldap
+| openid: lightopenid, openido, google, yahoo, blogger, ...
+*/
+$config['validation'] = array('ldap','simple','openid');
+
+
+/*
+|--------------------------------------------------------------------------
+| ldap_server
+|--------------------------------------------------------------------------
+| when using ldap authentication (e.g. windows active directory),
+| you must provide ldap server address
+*/
+$config['ldap_server'] = '127.0.0.1';
+
+
+/*
+|--------------------------------------------------------------------------
+| ldap_domain
+|--------------------------------------------------------------------------
+| when using ldap authentication (e.g. windows active directory),
+| you must provide ldap server domain. In active directory perhaps you need
+| to put a '@' before.
+*/
+$config['ldap_domain'] = '@MY_DOMAIN';
+
+/*
+|--------------------------------------------------------------------------
+| main page
+|--------------------------------------------------------------------------
+| main page after successful sign in
+|
+*/
+$config['main_page_after_sign_in']	= 'dir';
+
+
+/*
+|--------------------------------------------------------------------------
+| allow_duplicated_emails
+|--------------------------------------------------------------------------
+| Wether email could be duplicated in user table
+*/
+$config['allow_duplicated_email'] = FALSE;
+
+/*
+|--------------------------------------------------------------------------
+| require_activation
+|--------------------------------------------------------------------------
+| Wether user must check email to activate account
+*/
+$config['require_activation'] = TRUE;
+
+
+/*
+|--------------------------------------------------------------------------
+| dir1
+|--------------------------------------------------------------------------
+| When a file is uploaded, It must be stored inside to level of dirs
+| These dirs are calculated doing mod operation to file id.
+*/
+$config['dir1'] = 26;
+$config['dir2'] = 1024;
+
+/*
+|--------------------------------------------------------------------------
+| pagination
+|--------------------------------------------------------------------------
+| files and search results are shown paginated. Here you can stablish 
+| pagination level
+*/
+$config['pagination'] = 256;
+
+/*
+|--------------------------------------------------------------------------
+| status_colors
+|--------------------------------------------------------------------------
+| colors to be displayed depending on file status
+|
+*/
+$config['status_colors']	= array('white','red','orange');
+
+/* End of file 4vientos.php */
+/* Location: ./application/config/config.php */

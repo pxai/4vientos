@@ -1,0 +1,13 @@
+/**
+* admin.css
+*
+*/
+
+#admin {
+	width: 60em;
+	margin: 0 auto 0 auto;
+}
+
+#admin div {
+	width: 20em;
+}
